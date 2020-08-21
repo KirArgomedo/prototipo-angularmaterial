@@ -1,0 +1,27 @@
+<div class="tabla-contenedor">
+  <h5  class="titulo">Listado de Vehiculos</h5>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Tipo de Vehiculo</th>
+      <th scope="col">Color</th>
+      <th scope="col">Clase</th>
+      <th scope="col">Placa</th>
+      <th scope="col">Tarjeta de identificacion vehicular</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let vehiculo of vehiculos" >
+      <td >{{ vehiculo.id  }}</td>
+      <td>{{ vehiculo.marca  }}</td>
+      <td>{{ vehiculo.tipoDeVehiculo  }}</td>
+      <td>{{ vehiculo.color  }}</td>
+      <td>{{ vehiculo.clase  }}</td>
+      <td>{{ vehiculo.placa  }}</td>
+      <td>{{ vehiculo.tarjetaDeIdentificacionVehicular  }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
